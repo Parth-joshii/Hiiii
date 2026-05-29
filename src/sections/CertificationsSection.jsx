@@ -11,9 +11,13 @@ export function CertificationsSection() {
       description="Focused learning across generative AI, analytics, edge AI, and end-to-end machine learning delivery."
       className="py-14 md:py-16 lg:py-20"
     >
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap justify-center gap-4">
         {certifications.map((cert) => (
-          <article key={cert.name} data-gsap-reveal className="glass-panel edge-highlight group rounded-lg p-5 transition-transform duration-300 hover:-translate-y-1">
+          <article
+            key={cert.name}
+            data-gsap-reveal
+            className="glass-panel edge-highlight group min-h-[236px] w-full rounded-lg p-5 transition-transform duration-300 hover:-translate-y-1 md:basis-[calc((100%_-_1rem)/2)] lg:basis-[calc((100%_-_2rem)/3)]"
+          >
             <div className="mb-5 flex items-center justify-between gap-4">
               <div className="grid size-11 place-items-center rounded-md border border-white/[0.12] bg-white/[0.07] text-primary">
                 <Award className="size-5" />
