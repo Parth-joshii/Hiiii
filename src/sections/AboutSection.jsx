@@ -9,6 +9,11 @@ export function AboutSection() {
   return (
     <section id="about" className="perf-section relative z-10 overflow-hidden pb-16 pt-8 md:py-20 lg:py-24">
       <div className="section-grid absolute inset-0 opacity-35" aria-hidden="true" />
+      <div
+        data-scroll-wash
+        className="pointer-events-none absolute inset-x-[-14%] top-[20%] h-44 bg-[linear-gradient(100deg,transparent_0%,rgba(245,196,81,0.1)_24%,rgba(167,139,250,0.08)_52%,rgba(56,189,248,0.07)_78%,transparent_100%)] opacity-0 blur-2xl"
+        aria-hidden="true"
+      />
       <div className="container relative">
         <div className="grid items-start gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
           <Reveal>

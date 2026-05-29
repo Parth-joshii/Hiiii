@@ -35,11 +35,14 @@ function ProjectVisual({ project }) {
   const Icon = project.icon;
 
   return (
-    <div className="relative h-44 overflow-hidden border-b border-white/10 bg-black/30 sm:h-52" data-parallax="-24">
-      <div className="absolute inset-0 bg-grid-large bg-[length:44px_44px] opacity-30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_35%_24%,rgba(45,212,191,0.28),transparent_44%),radial-gradient(ellipse_at_72%_78%,rgba(245,196,81,0.18),transparent_42%)]" />
+    <div className="relative h-44 overflow-hidden border-b border-white/10 bg-black/30 sm:h-52">
+      <div className="absolute inset-x-[-6%] inset-y-[-16%] bg-grid-large bg-[length:44px_44px] opacity-30" data-parallax="-14" />
+      <div
+        className="absolute inset-x-[-8%] inset-y-[-18%] bg-[radial-gradient(ellipse_at_35%_24%,rgba(45,212,191,0.28),transparent_44%),radial-gradient(ellipse_at_72%_78%,rgba(245,196,81,0.18),transparent_42%)]"
+        data-parallax="-24"
+      />
       <ArchitectureFlow nodes={project.architecture} />
-      <div className="absolute left-6 bottom-16 grid size-14 place-items-center rounded-md border border-white/[0.15] bg-white/[0.08] text-primary shadow-glow">
+      <div className="absolute left-6 bottom-16 grid size-14 place-items-center rounded-md border border-white/[0.15] bg-white/[0.08] text-primary shadow-glow" data-parallax="-18">
         <Icon className="size-7" />
       </div>
       <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between gap-4">

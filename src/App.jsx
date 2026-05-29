@@ -51,19 +51,25 @@ export default function App() {
 
   useEffect(() => {
     let cancelled = false;
-    let cleanup = () => {};
+    let cleanupReveal = () => {};
+    let cleanupScrollEffects = () => {};
 
     const cancelIdle = runWhenIdle(async () => {
-      const { initGsapReveal } = await import("@/animations/gsapReveal");
+      const [{ initGsapReveal }, { initScrollEffects }] = await Promise.all([
+        import("@/animations/gsapReveal"),
+        import("@/animations/scrollEffects"),
+      ]);
       if (!cancelled) {
-        cleanup = initGsapReveal();
+        cleanupReveal = initGsapReveal();
+        cleanupScrollEffects = initScrollEffects();
       }
     }, 1000);
 
     return () => {
       cancelled = true;
       cancelIdle();
-      cleanup();
+      cleanupReveal();
+      cleanupScrollEffects();
     };
   }, []);
 
