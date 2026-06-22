@@ -152,6 +152,20 @@ const topics = [
     },
   },
   {
+    intent: "showmethere",
+    labels: {
+      en: "ShowMeThere chatbot",
+      hi: "ShowMeThere चैटबॉट",
+      gu: "ShowMeThere ચેટબોટ",
+      mr: "ShowMeThere चॅटबॉट",
+      bn: "ShowMeThere চ্যাটবট",
+      ta: "ShowMeThere சாட்பாட்",
+      te: "ShowMeThere చాట్‌బాట్",
+      kn: "ShowMeThere ಚಾಟ್‌ಬಾಟ್",
+      ml: "ShowMeThere ചാറ്റ്ബോട്ട്",
+    },
+  },
+  {
     intent: "whatsapp",
     labels: {
       en: "WhatsApp automation",
@@ -615,6 +629,7 @@ const directIntentKeywords = {
   ],
   projects: ["project", "build", "portfolio", "प्रोजेक्ट", "પ્રોજેક્ટ", "প্রজেক্ট", "திட்ட", "ప్రాజెక్ట", "ಪ್ರಾಜೆಕ್ಟ", "പ്രോജക്ട"],
   rag: ["rag", "retrieval", "chatbot", "qdrant", "embedding", "चैटबॉट", "ચેટબોટ", "চ্যাটবট", "சாட்பாட்", "చాట్", "ಚಾಟ್", "ചാറ്റ്"],
+  showmethere: ["showmethere", "show me there", "faiss", "bm25", "startup", "शोमीदेयर", "શોમીધેર"],
   whatsapp: ["whatsapp", "automation", "agent", "n8n", "ऑटोमेशन", "ઓટોમેશન", "অটোমেশন", "ஆட்டோமேஷன்", "ఆటోమేషన్", "ಆಟೊಮೇಶನ್", "ഓട്ടോമേഷൻ"],
   medical: ["medical", "disease", "cnn", "lstm", "accuracy", "मेडिकल", "रोग", "মেডিক্যাল", "நோய்", "వ్యాధి", "ರೋಗ", "രോഗ"],
   image: ["image", "opencv", "vision", "quality", "sharpness", "noise", "इमेज", "વિઝન", "ছবি", "பட", "ఇమేజ్", "ಚಿತ್ರ", "ഇമേജ്"],
@@ -627,6 +642,7 @@ const directIntentKeywords = {
 const intentPriority = [
   "contact",
   "rag",
+  "showmethere",
   "whatsapp",
   "medical",
   "image",

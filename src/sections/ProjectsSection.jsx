@@ -92,7 +92,7 @@ export function ProjectsSection() {
                   </a>
                 </Button>
                 <Button asChild size="sm">
-                  <a href={project.demoUrl}>
+                  <a href={project.demoUrl} target="_blank" rel="noreferrer">
                     Live Demo <ArrowUpRight />
                   </a>
                 </Button>

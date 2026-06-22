@@ -63,12 +63,14 @@ const replyCopy = {
       `Featured projects: ${projects.map((project) => project.title).join("; ")}. The strongest themes are RAG, automation, NLP, computer vision, and production-ready APIs.`,
     rag: ({ projects }) =>
       `${projects[0].title}: a multilingual educational RAG chatbot for 8+ Indian languages. Stack: ${projectStack(projects[0])}. Flow: ${projectFlow(projects[0])}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: a production-grade RAG chatbot for startup discovery with FAISS vector search and BM25 ranking. Stack: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: an AI-powered WhatsApp automation workflow using n8n and WhatsApp Cloud API. Stack: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: an AI-powered WhatsApp automation workflow using n8n and WhatsApp Cloud API. Stack: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: a disease prediction and recommendation system using ${projectStack(projects[2])}. Result: ${projects[2].metric}.`,
+      `${projects[3].title}: a disease prediction and recommendation system using ${projectStack(projects[3])}. Result: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: an OpenCV and Streamlit dashboard for sharpness, noise, and clarity analysis. Focus: ${projects[3].metric}.`,
+      `${projects[2].title}: an OpenCV and Streamlit dashboard for sharpness, noise, and clarity analysis. Focus: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       experiences.map((item) => `${item.role} at ${item.company}: ${item.bullets[0]}`).join(" "),
     education: ({ profile }) =>
@@ -89,12 +91,14 @@ const replyCopy = {
       `पार्थ के प्रमुख प्रोजेक्ट हैं: ${projects.map((project) => project.title).join("; ")}. उनका फोकस RAG, automation, NLP, computer vision और production-ready APIs पर है।`,
     rag: ({ projects }) =>
       `${projects[0].title}: यह 8+ भारतीय भाषाओं के लिए शैक्षणिक multilingual RAG chatbot है। तकनीकी स्टैक: ${projectStack(projects[0])}. प्रवाह: ${projectFlow(projects[0], "hi")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: यह FAISS vector search और BM25 ranking के साथ स्टार्टअप खोज के लिए एक production-grade RAG chatbot है। तकनीकी स्टैक: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: यह n8n और WhatsApp Cloud API से बना AI-powered WhatsApp automation workflow है। तकनीकी स्टैक: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: यह n8n और WhatsApp Cloud API से बना AI-powered WhatsApp automation workflow है। तकनीकी स्टैक: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: यह ${projectStack(projects[2])} से बना disease prediction और recommendation system है। परिणाम: ${projects[2].metric}.`,
+      `${projects[3].title}: यह ${projectStack(projects[3])} से बना disease prediction और recommendation system है। परिणाम: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: यह OpenCV और Streamlit dashboard है जो sharpness, noise और clarity analyze करता है। मुख्य फोकस: ${projects[3].metric}.`,
+      `${projects[2].title}: यह OpenCV और Streamlit dashboard है जो sharpness, noise और clarity analyze करता है। मुख्य फोकस: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `अनुभव: ${experiences[0].company} में RAG pipelines, LangChain, Qdrant और OpenAI embeddings पर काम; ${experiences[1].company} में ML classification और preprocessing pipelines पर काम।`,
     education: ({ profile }) =>
@@ -115,12 +119,14 @@ const replyCopy = {
       `પાર્થના મુખ્ય પ્રોજેક્ટ્સ છે: ${projects.map((project) => project.title).join("; ")}. તેમનો ફોકસ RAG, automation, NLP, computer vision અને production-ready APIs પર છે.`,
     rag: ({ projects }) =>
       `${projects[0].title}: આ 8+ ભારતીય ભાષાઓ માટેનું શૈક્ષણિક multilingual RAG chatbot છે. ટેક સ્ટેક: ${projectStack(projects[0])}. પ્રવાહ: ${projectFlow(projects[0], "gu")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: આ FAISS vector search અને BM25 ranking સાથે સ્ટાર્ટઅપ શોધ માટેનું production-grade RAG chatbot છે. ટેક સ્ટેક: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: આ n8n અને WhatsApp Cloud API વડે બનાવેલું AI-powered WhatsApp automation workflow છે. ટેક સ્ટેક: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: આ n8n અને WhatsApp Cloud API વડે બનાવેલું AI-powered WhatsApp automation workflow છે. ટેક સ્ટેક: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: આ ${projectStack(projects[2])} વડે બનાવેલું disease prediction અને recommendation system છે. પરિણામ: ${projects[2].metric}.`,
+      `${projects[3].title}: આ ${projectStack(projects[3])} વડે બનાવેલું disease prediction અને recommendation system છે. પરિણામ: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: આ OpenCV અને Streamlit dashboard છે, જે sharpness, noise અને clarity analyze કરે છે. મુખ્ય ફોકસ: ${projects[3].metric}.`,
+      `${projects[2].title}: આ OpenCV અને Streamlit dashboard છે, જે sharpness, noise અને clarity analyze કરે છે. મુખ્ય ફોકસ: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `અનુભવ: ${experiences[0].company} માં RAG pipelines, LangChain, Qdrant અને OpenAI embeddings પર કામ; ${experiences[1].company} માં ML classification અને preprocessing pipelines પર કામ.`,
     education: ({ profile }) =>
@@ -141,12 +147,14 @@ const replyCopy = {
       `पार्थचे प्रमुख प्रोजेक्ट्स आहेत: ${projects.map((project) => project.title).join("; ")}. त्यांचा फोकस RAG, automation, NLP, computer vision आणि production-ready APIs वर आहे.`,
     rag: ({ projects }) =>
       `${projects[0].title}: हा 8+ भारतीय भाषांसाठी शैक्षणिक multilingual RAG chatbot आहे. टेक स्टॅक: ${projectStack(projects[0])}. प्रवाह: ${projectFlow(projects[0], "mr")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: हे FAISS vector search आणि BM25 ranking सह स्टार्टअप शोधासाठी एक production-grade RAG chatbot आहे। टेक स्टॅक: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: हा n8n आणि WhatsApp Cloud API वापरून बनवलेला AI-powered WhatsApp automation workflow आहे. टेक स्टॅक: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: हा n8n आणि WhatsApp Cloud API वापरून बनवलेला AI-powered WhatsApp automation workflow आहे. टेक स्टॅक: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: हा ${projectStack(projects[2])} वापरून बनवलेला disease prediction आणि recommendation system आहे. निकाल: ${projects[2].metric}.`,
+      `${projects[3].title}: हा ${projectStack(projects[3])} वापरून बनवलेला disease prediction आणि recommendation system आहे. निकाल: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: हा OpenCV आणि Streamlit dashboard आहे, जो sharpness, noise आणि clarity analyze करतो. मुख्य फोकस: ${projects[3].metric}.`,
+      `${projects[2].title}: हा OpenCV आणि Streamlit dashboard आहे, जो sharpness, noise आणि clarity analyze करतो. मुख्य फोकस: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `अनुभव: ${experiences[0].company} मध्ये RAG pipelines, LangChain, Qdrant आणि OpenAI embeddings वर काम; ${experiences[1].company} मध्ये ML classification आणि preprocessing pipelines वर काम.`,
     education: ({ profile }) =>
@@ -167,12 +175,14 @@ const replyCopy = {
       `পার্থের প্রধান প্রজেক্ট: ${projects.map((project) => project.title).join("; ")}. তাঁর মূল ফোকাস RAG, automation, NLP, computer vision এবং production-ready APIs.`,
     rag: ({ projects }) =>
       `${projects[0].title}: এটি 8+ ভারতীয় ভাষার জন্য educational multilingual RAG chatbot। টেক স্ট্যাক: ${projectStack(projects[0])}. প্রবাহ: ${projectFlow(projects[0], "bn")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: এটি FAISS vector search এবং BM25 ranking সহ স্টার্টআপ খোঁজার জন্য একটি production-grade RAG chatbot। টেক স্ট্যাক: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: এটি n8n এবং WhatsApp Cloud API দিয়ে তৈরি AI-powered WhatsApp automation workflow। টেক স্ট্যাক: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: এটি n8n এবং WhatsApp Cloud API দিয়ে তৈরি AI-powered WhatsApp automation workflow। টেক স্ট্যাক: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: এটি ${projectStack(projects[2])} দিয়ে তৈরি disease prediction এবং recommendation system। ফলাফল: ${projects[2].metric}.`,
+      `${projects[3].title}: এটি ${projectStack(projects[3])} দিয়ে তৈরি disease prediction এবং recommendation system। ফলাফল: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: এটি OpenCV এবং Streamlit dashboard, যা sharpness, noise এবং clarity analyze করে। মূল ফোকাস: ${projects[3].metric}.`,
+      `${projects[2].title}: এটি OpenCV এবং Streamlit dashboard, যা sharpness, noise এবং clarity analyze করে। মূল ফোকাস: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `অভিজ্ঞতা: ${experiences[0].company}-এ RAG pipelines, LangChain, Qdrant এবং OpenAI embeddings নিয়ে কাজ; ${experiences[1].company}-এ ML classification এবং preprocessing pipelines নিয়ে কাজ।`,
     education: ({ profile }) =>
@@ -193,12 +203,14 @@ const replyCopy = {
       `பார்தின் முக்கிய திட்டங்கள்: ${projects.map((project) => project.title).join("; ")}. முக்கிய கவனம் RAG, automation, NLP, computer vision மற்றும் production-ready APIs.`,
     rag: ({ projects }) =>
       `${projects[0].title}: இது 8+ இந்திய மொழிகளுக்கான கல்வி சார்ந்த multilingual RAG chatbot. தொழில்நுட்ப அடுக்கு: ${projectStack(projects[0])}. ஓட்டம்: ${projectFlow(projects[0], "ta")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: இது FAISS vector search மற்றும் BM25 ranking கொண்ட ஒரு production-grade RAG chatbot ஆகும். தொழில்நுட்ப அடுக்கு: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: இது n8n மற்றும் WhatsApp Cloud API கொண்டு உருவாக்கப்பட்ட AI-powered WhatsApp automation workflow. தொழில்நுட்ப அடுக்கு: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: இது n8n மற்றும் WhatsApp Cloud API கொண்டு உருவாக்கப்பட்ட AI-powered WhatsApp automation workflow. தொழில்நுட்ப அடுக்கு: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: இது ${projectStack(projects[2])} கொண்டு உருவாக்கப்பட்ட disease prediction மற்றும் recommendation system. முடிவு: ${projects[2].metric}.`,
+      `${projects[3].title}: இது ${projectStack(projects[3])} கொண்டு உருவாக்கப்பட்ட disease prediction மற்றும் recommendation system. முடிவு: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: இது OpenCV மற்றும் Streamlit dashboard; sharpness, noise, clarity ஆகியவற்றை analyze செய்கிறது. முக்கிய கவனம்: ${projects[3].metric}.`,
+      `${projects[2].title}: இது OpenCV மற்றும் Streamlit dashboard; sharpness, noise, clarity ஆகியவற்றை analyze செய்கிறது. முக்கிய கவனம்: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `அனுபவம்: ${experiences[0].company}-இல் RAG pipelines, LangChain, Qdrant மற்றும் OpenAI embeddings மீது வேலை; ${experiences[1].company}-இல் ML classification மற்றும் preprocessing pipelines மீது வேலை.`,
     education: ({ profile }) =>
@@ -219,12 +231,14 @@ const replyCopy = {
       `పార్థ్ ముఖ్య ప్రాజెక్టులు: ${projects.map((project) => project.title).join("; ")}. ప్రధాన ఫోకస్ RAG, automation, NLP, computer vision మరియు production-ready APIs.`,
     rag: ({ projects }) =>
       `${projects[0].title}: ఇది 8+ భారతీయ భాషల కోసం విద్యా సంబంధిత multilingual RAG chatbot. టెక్ స్టాక్: ${projectStack(projects[0])}. ప్రవాహం: ${projectFlow(projects[0], "te")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: ఇది FAISS vector search మరియు BM25 ranking తో కూడిన ఒక production-grade RAG chatbot. టెక్ స్టాక్: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: ఇది n8n మరియు WhatsApp Cloud API తో చేసిన AI-powered WhatsApp automation workflow. టెక్ స్టాక్: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: ఇది n8n మరియు WhatsApp Cloud API తో చేసిన AI-powered WhatsApp automation workflow. టెక్ స్టాక్: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: ఇది ${projectStack(projects[2])} తో చేసిన disease prediction మరియు recommendation system. ఫలితం: ${projects[2].metric}.`,
+      `${projects[3].title}: ఇది ${projectStack(projects[3])} తో చేసిన disease prediction మరియు recommendation system. ఫలితం: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: ఇది OpenCV మరియు Streamlit dashboard; sharpness, noise, clarity ను analyze చేస్తుంది. ప్రధాన ఫోకస్: ${projects[3].metric}.`,
+      `${projects[2].title}: ఇది OpenCV మరియు Streamlit dashboard; sharpness, noise, clarity ను analyze చేస్తుంది. ప్రధాన ఫోకస్: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `అనుభవం: ${experiences[0].company} లో RAG pipelines, LangChain, Qdrant మరియు OpenAI embeddings పై పని; ${experiences[1].company} లో ML classification మరియు preprocessing pipelines పై పని.`,
     education: ({ profile }) =>
@@ -245,12 +259,14 @@ const replyCopy = {
       `ಪಾರ್ಥ್ ಅವರ ಪ್ರಮುಖ ಪ್ರಾಜೆಕ್ಟ್ಗಳು: ${projects.map((project) => project.title).join("; ")}. ಮುಖ್ಯ ಫೋಕಸ್ RAG, automation, NLP, computer vision ಮತ್ತು production-ready APIs.`,
     rag: ({ projects }) =>
       `${projects[0].title}: ಇದು 8+ ಭಾರತೀಯ ಭಾಷೆಗಳಿಗಾಗಿ ಶಿಕ್ಷಣಾಧಾರಿತ multilingual RAG chatbot. ಟೆಕ್ ಸ್ಟ್ಯಾಕ್: ${projectStack(projects[0])}. ಹರಿವು: ${projectFlow(projects[0], "kn")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: ಇದು FAISS vector search ಮತ್ತು BM25 ranking ಹೊಂದಿರುವ startup ಶೋಧನೆಗಾಗಿ production-grade RAG chatbot ಆಗಿದೆ. ಟೆಕ್ ಸ್ಟ್ಯಾಕ್: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: ಇದು n8n ಮತ್ತು WhatsApp Cloud API ಬಳಸಿ ನಿರ್ಮಿಸಿದ AI-powered WhatsApp automation workflow. ಟೆಕ್ ಸ್ಟ್ಯಾಕ್: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: ಇದು n8n ಮತ್ತು WhatsApp Cloud API ಬಳಸಿ ನಿರ್ಮಿಸಿದ AI-powered WhatsApp automation workflow. ಟೆಕ್ ಸ್ಟ್ಯಾಕ್: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: ಇದು ${projectStack(projects[2])} ಬಳಸಿ ನಿರ್ಮಿಸಿದ disease prediction ಮತ್ತು recommendation system. ಫಲಿತಾಂಶ: ${projects[2].metric}.`,
+      `${projects[3].title}: ಇದು ${projectStack(projects[3])} ಬಳಸಿ ನಿರ್ಮಿಸಿದ disease prediction ಮತ್ತು recommendation system. ಫಲಿತಾಂಶ: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: ಇದು OpenCV ಮತ್ತು Streamlit dashboard; sharpness, noise, clarity analyze ಮಾಡುತ್ತದೆ. ಮುಖ್ಯ ಫೋಕಸ್: ${projects[3].metric}.`,
+      `${projects[2].title}: ಇದು OpenCV ಮತ್ತು Streamlit dashboard; sharpness, noise, clarity analyze ಮಾಡುತ್ತದೆ. ಮುಖ್ಯ ಫೋಕಸ್: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `ಅನುಭವ: ${experiences[0].company} ನಲ್ಲಿ RAG pipelines, LangChain, Qdrant ಮತ್ತು OpenAI embeddings ಮೇಲೆ ಕೆಲಸ; ${experiences[1].company} ನಲ್ಲಿ ML classification ಮತ್ತು preprocessing pipelines ಮೇಲೆ ಕೆಲಸ.`,
     education: ({ profile }) =>
@@ -271,12 +287,14 @@ const replyCopy = {
       `പാർത്ഥിന്റെ പ്രധാന പ്രോജക്ടുകൾ: ${projects.map((project) => project.title).join("; ")}. പ്രധാന ശ്രദ്ധ RAG, automation, NLP, computer vision, production-ready APIs എന്നിവയിലാണ്.`,
     rag: ({ projects }) =>
       `${projects[0].title}: ഇത് 8+ ഇന്ത്യൻ ഭാഷകൾക്കായുള്ള വിദ്യാഭ്യാസ multilingual RAG chatbot ആണ്. ടെക് സ്റ്റാക്ക്: ${projectStack(projects[0])}. പ്രവാഹം: ${projectFlow(projects[0], "ml")}.`,
+    showmethere: ({ projects }) =>
+      `${projects[1].title}: ഇത് FAISS vector search, BM25 ranking എന്നിവയുള്ള ഒരു production-grade RAG chatbot ആണ്. ടെക് സ്റ്റാക്ക്: ${projectStack(projects[1])}.`,
     whatsapp: ({ projects }) =>
-      `${projects[1].title}: ഇത് n8n, WhatsApp Cloud API എന്നിവ ഉപയോഗിച്ച് നിർമിച്ച AI-powered WhatsApp automation workflow ആണ്. ടെക് സ്റ്റാക്ക്: ${projectStack(projects[1])}.`,
+      `${projects[4].title}: ഇത് n8n, WhatsApp Cloud API എന്നിവ ഉപയോഗിച്ച് നിർമിച്ച AI-powered WhatsApp automation workflow ആണ്. ടെക് സ്റ്റാക്ക്: ${projectStack(projects[4])}.`,
     medical: ({ projects }) =>
-      `${projects[2].title}: ഇത് ${projectStack(projects[2])} ഉപയോഗിച്ച് നിർമിച്ച disease prediction, recommendation system ആണ്. ഫലം: ${projects[2].metric}.`,
+      `${projects[3].title}: ഇത് ${projectStack(projects[3])} ഉപയോഗിച്ച് നിർമിച്ച disease prediction, recommendation system ആണ്. ഫലം: ${projects[3].metric}.`,
     image: ({ projects }) =>
-      `${projects[3].title}: ഇത് OpenCV, Streamlit dashboard ആണ്; sharpness, noise, clarity analyze ചെയ്യുന്നു. പ്രധാന ശ്രദ്ധ: ${projects[3].metric}.`,
+      `${projects[2].title}: ഇത് OpenCV, Streamlit dashboard ആണ്; sharpness, noise, clarity analyze ചെയ്യുന്നു. പ്രധാന ശ്രദ്ധ: ${projects[2].metric}.`,
     experience: ({ experiences }) =>
       `അനുഭവം: ${experiences[0].company}-ൽ RAG pipelines, LangChain, Qdrant, OpenAI embeddings എന്നിവയിൽ ജോലി; ${experiences[1].company}-ൽ ML classification, preprocessing pipelines എന്നിവയിൽ ജോലി.`,
     education: ({ profile }) =>
@@ -293,6 +311,7 @@ const replyCopy = {
 const fallbackKeywordIntents = [
   ["contact", ["contact", "email", "phone", "hire", "github", "linkedin"]],
   ["rag", ["rag", "retrieval", "chatbot", "qdrant", "embedding"]],
+  ["showmethere", ["showmethere", "show me there", "faiss", "bm25", "startup"]],
   ["whatsapp", ["whatsapp", "automation", "agent", "n8n"]],
   ["medical", ["medical", "disease", "cnn", "lstm", "accuracy"]],
   ["image", ["image", "opencv", "vision", "quality", "sharpness", "noise"]],
